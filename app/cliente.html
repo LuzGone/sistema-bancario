@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cliente</title>
+</head>
+<body>
+    <header>
+        <h1>Tela de Administração de Clientes</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Adicionar Cliente</h2>
+            <div>
+                <h4>Informações do Cliente</h4>
+                <p>
+                    Nome:<input id="nome" type="text">
+                </p>
+                <p>
+                    CPF:<input id="cpf" type="text">
+                </p>
+            </div>
+            <div>
+                <h4>Informações da Conta</h4>
+                <p>
+                    Número da Conta:<input id="numero" type="text">
+                </p>
+                <p>
+                    Saldo Inicial:<input id="saldo" type="text">
+                </p>
+            </div>
+            <button type="submit" onclick="clienteController.inserir(event)">Inserir</button>
+        </div>
+        <div id="clientes">
+            <h2>Clientes Cadastrados</h2>
+        </div>
+    </main>
+    <footer>
+        <h4>Desenvolvido por: LuzGoNe</h4>
+    </footer>
+    <script src="js/model/conta.js"></script>
+    <script src="js/model/cliente.js"></script>
+    <script src="js/model/clientes.js"></script>
+    <script src="js/controller/cliente-controller.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
